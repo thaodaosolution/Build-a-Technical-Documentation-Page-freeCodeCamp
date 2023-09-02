@@ -1,0 +1,96 @@
+html, body {
+font-family: Open Sans, Arial, sans-serif; }
+*{
+  box-sizing: border-box;
+}
+/*navbar section*/
+#navbar{
+  overflow-y: scroll;
+  overflow-x:auto;
+  margin:0;
+  padding:0;
+  top:0;
+  bottom:0;
+  height: 300px;
+  width: 100%;
+}
+.nav-link {
+  display: block;
+  border: 0.5px solid black;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-bottom:none;
+  border-left:none;
+  border-right:none;
+  list-style-type: none;
+  overflow-x: nowrap;
+  
+}
+a:active,:hover,:link,:visited{
+color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li a {
+  display: block;
+}
+
+/*main body section*/
+#main-doc{
+  padding: 20px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+}
+#main-doc header{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+code{
+  display: block;
+  background-color: #f7f7f7;
+  line-height: 2rem;
+line-heigh: 2;
+padding: 20px;
+margin: 10px
+}
+#reference{
+  line-height:1.5; 
+  width: 100%;
+}
+#reference .main-article a{
+  color: blue;
+}
+#reference .main-article a:hover{
+  color: red;
+}
+#reference .main-article a:visited{
+  color: purple;
+}
+
+/*@Media*/
+@media only screen and (min-width: 600px){
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+  #navbar{
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    width: 250px;
+  }
+  #main-doc{
+    position: relative;
+    margin-left: 260px;
+    width: 100%;
+  }
+
+}
